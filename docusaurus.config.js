@@ -11,9 +11,7 @@ const config = {
   tagline: "Setup your homelab in 5 minutes.",
 
   url: 'https://vertex-center.github.io/',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/vertex-docs/',
 
   organizationName: 'vertex-center',
   projectName: 'vertex',
