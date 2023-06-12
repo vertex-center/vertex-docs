@@ -1,41 +1,14 @@
-# Website
+<p align="center">
+    <img height="96" src="https://github.com/vertex-center/vertex-design/raw/main/logos/transparent/vertex_logo_transparent.png" alt="Vertex logo" />
+</p>
+<h1 align="center">Vertex Documentation</h1>
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+<p align="center">
+    <img alt="GitHub license" src="https://img.shields.io/github/license/vertex-center/vertex-docs?color=DE3C4B&labelColor=1E212B&style=for-the-badge">
+    <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/vertex-center/vertex-docs?color=DE3C4B&labelColor=1E212B&style=for-the-badge">
+</p>
 
-### Installation
+## License
 
-```
-$ yarn
-```
-
-### Local Development
-
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+- [Vertex Docs](https://github.com/vertex-center/vertex-docs) is released under the [MIT License](./LICENSE.md).
+- The template was generated with [Docusaurus](https://docusaurus.io).
