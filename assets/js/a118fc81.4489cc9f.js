@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvertex_docs=self.webpackChunkvertex_docs||[]).push([[375],{959:e=>{e.exports=JSON.parse('{"title":"Developers","slug":"/category/developers","permalink":"/docs/category/developers","navigation":{"previous":{"title":"Logs","permalink":"/docs/logs"},"next":{"title":"Develop a service","permalink":"/docs/developers/develop-service"}}}')}}]);
