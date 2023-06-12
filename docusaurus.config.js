@@ -18,6 +18,8 @@ const config = {
   organizationName: 'vertex-center',
   projectName: 'vertex',
 
+  trailingSlash: false,
+
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
