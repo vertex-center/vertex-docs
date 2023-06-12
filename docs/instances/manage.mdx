@@ -1,0 +1,40 @@
+---
+sidebar_position: 2
+---
+
+# Manage
+
+To manage an instance, click on it. The page will display multiple settings and management tools.
+
+* **Docker:** Describe the Docker instance, if applicable.
+* **Logs:** See the instance logs.
+* **Environment:** Change environment configuration (ports, secret variables...).
+* **Dependencies:** Install dependencies on your machine easily.
+
+## Docker
+
+:::note
+This page is only visible if the instance uses Docker.
+:::
+
+This page displays some info about the Docker container, like its ID, name, image or platform.
+
+## Logs
+
+This page displays the logs in real-time. Note that these logs are also backup in the `{instance_path}/.vertex/logs` directory, and are split in one file per day. These can be useful to investigate issues long after they appeared.
+
+## Environment
+
+On this page, you can edit the instance settings, like ports or secret keys.
+
+## Dependencies
+
+:::note
+This page is only visible if the instance doesn't use Docker.
+:::
+
+If a dependency is missing on your computer to run an instance, you can try to use the Vertex Dependencies tool to fix these in one click.
+
+To install a package, select your favourite package manager, and click install.
+
+However, package managers that need admin privileges cannot be used by Vertex. In this case, Vertex will give you the command you need to execute to install the missing dependencies.

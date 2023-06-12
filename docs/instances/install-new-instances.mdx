@@ -1,0 +1,86 @@
+---
+sidebar_position: 1
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Install new instances
+
+There are three installation methods:
+
+1. **Marketplace**: Download services from our online and certified repository.
+
+2. **Git**: Clone services from GitHub, GitLab...
+
+3. **Local storage**: Point to Vertex the path of an existing service on your computer. Vertex will keep it installed there. This method is recommended to develop new services.
+
+## Procedure
+
+<Tabs>
+
+<TabItem value="marketplace" label="Marketplace">
+
+1. From the homepage, click on `+`.
+
+2. Select _Marketplace_. Then click on _Next_.
+
+3. On the download step:
+
+    - **Service**: Select in the dropdown the service you want to install.
+
+    - **Use Docker**?: Select "yes" if you want to use Docker instead of normal installation.
+
+    :::note
+    Vertex was made to avoid Docker. We do not advice to use Docker if you have a low powered computer like a Raspberry Pi. However, Vertex is fully compatible with Docker if you want containerization and all of its advantages.
+    :::
+
+    - **Download the precompiled release?:** (only if Docker is disabled) Select "no" if you want to force Vertex to clone the service from sources instead of downloading the precompiled binaries.
+
+4. Click on _Download_. Wait until the end of the download process.
+
+5. Configure the service as you wish, then click on _Save_.
+
+You are now redirected to the service instance page. Enjoy!
+
+</TabItem>
+
+<TabItem value="git" label="Git">
+
+1. From the [Vertex UI](http://localhost:6130), click on `+`.
+
+2. Select _Git_. Then click on _Next_.
+
+3. In the _Repository_ input, enter the URL of the git repository.
+
+    _Example_: `github.com/vertex-center/vertex-redis`
+
+4. Click on _Download_. Wait until the end of the download process.
+
+5. Configure the service as you wish, then click on _Save_.
+
+You are now redirected to the service instance page. Enjoy!
+
+</TabItem>
+
+<TabItem value="localstorage" label="Local storage">
+
+:::info
+This "Local storage" method is recommended for Vertex development.
+:::
+
+1. From the [Vertex UI](http://localhost:6130), click on `+`.
+
+2. Select _Local storage_. Then click on _Next_.
+
+3. In the _Service path_ input, enter the absolute path of your service, installed on your computer.
+
+4. Click on _Link to Vertex_.
+
+5. Configure the service as you wish, then click on _Save_.
+
+You are now redirected to the service instance page. Enjoy!
+
+</TabItem>
+
+</Tabs>

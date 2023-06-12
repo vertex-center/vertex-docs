@@ -1,0 +1,72 @@
+---
+sidebar_position: 1
+---
+
+# Develop a service
+
+To create a basic service, you'll need this hierarchy:
+
+```
+.vertex
+    \- service.json
+
+your-service.sh
+```
+
+1. `.vertex/service.json`
+
+    This file allows you to describe your service to Vertex (name, description, dependencies...). Below is an example of service.json file.
+
+    ```json
+    {
+        "id": "service-id",
+        "name": "Service Name",
+        "repository": "github.com/vertex-center/service-repository",
+        "description": "A small description of your service.",
+        "environment": [
+            {
+                "type": "port",
+                "name": "PORT",
+                "display_name": "Server Port",
+                "default": "8080",
+                "description": "The port to expose the API of this server."
+            }
+        ],
+        "methods": {
+            "script": {
+                "file": "start.sh",
+                "dependencies": {
+                    "redis": true
+                }
+            },
+            "docker": {
+                "dockerfile": "Dockerfile",
+                "ports": [
+                    "6379"
+                ],
+                "volumes": {
+                    "data": "/opt/storage"
+                }
+            }
+        }
+    }
+    ```
+
+2. `start.sh`
+
+    This file is the script that Vertex will use to start your service.
+    For example, if you want to run a go server, use this:
+
+        ```Shell
+        #!/bin/bash
+
+        exec go run .
+        ```
+
+    You can use a different name for the file, by changing its name in the `service.json` file.
+
+    :::note
+    This script will only be used if the service is installed from sources, or if there are no binaries available in the GitHub releases of the repository.
+    :::
+
+These two files are everything you need to convert your program to a Vertex service!
