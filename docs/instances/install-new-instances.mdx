@@ -23,43 +23,41 @@ There are three installation methods:
 
 1. From the homepage, click on `+`.
 
-2. Select _Marketplace_. Then click on _Next_.
+2. Click on _New instance_ next to the service you want to install.
 
-3. On the download step:
+3. In the popup, up to 3 different methods are proposed:
 
-    - **Service**: Select in the dropdown the service you want to install.
+    - **Script**: This is the default method. This will clone the service source code, and install it automatically.
 
-    - **Use Docker**?: Select "yes" if you want to use Docker instead of normal installation.
+    - **Release**: This will download the latest release published on GitHub, without the source code.
+
+    - **Docker**: This will create a docker container with the service, and manage it automatically.
 
     :::note
     Vertex was made to avoid Docker. We do not advice to use Docker if you have a low powered computer like a Raspberry Pi. However, Vertex is fully compatible with Docker if you want containerization and all of its advantages.
     :::
 
-    - **Download the precompiled release?:** (only if Docker is disabled) Select "no" if you want to force Vertex to clone the service from sources instead of downloading the precompiled binaries.
-
 4. Click on _Download_. Wait until the end of the download process.
 
-5. Configure the service as you wish, then click on _Save_.
-
-You are now redirected to the service instance page. Enjoy!
+Once done, you can go to the Vertex homepage and configure the service as you want.
 
 </TabItem>
 
 <TabItem value="git" label="Git">
 
-1. From the [Vertex UI](http://localhost:6130), click on `+`.
+1. From the homepage, click on `+`.
 
-2. Select _Git_. Then click on _Next_.
+2. Click on "import from elsewhere".
 
-3. In the _Repository_ input, enter the URL of the git repository.
+3. In the popup, ensure that "Git remote" is selected.
+
+4. In the input, enter the remote URL (without `https://`).
 
     _Example_: `github.com/vertex-center/vertex-redis`
 
 4. Click on _Download_. Wait until the end of the download process.
 
-5. Configure the service as you wish, then click on _Save_.
-
-You are now redirected to the service instance page. Enjoy!
+Once done, you can go to the Vertex homepage and configure the service as you want.
 
 </TabItem>
 
@@ -69,17 +67,17 @@ You are now redirected to the service instance page. Enjoy!
 This "Local storage" method is recommended for Vertex development.
 :::
 
-1. From the [Vertex UI](http://localhost:6130), click on `+`.
+1. From the homepage, click on `+`.
 
-2. Select _Local storage_. Then click on _Next_.
+2. Click on "import from elsewhere".
 
-3. In the _Service path_ input, enter the absolute path of your service, installed on your computer.
+3. In the popup, ensure that "Local storage" is selected.
 
-4. Click on _Link to Vertex_.
+4. In the _Service path_ input, enter the absolute path of your service, installed on your computer.
 
-5. Configure the service as you wish, then click on _Save_.
+4. Click on _Link_.
 
-You are now redirected to the service instance page. Enjoy!
+Once done, you can go to the Vertex homepage and configure the service as you want.
 
 </TabItem>
 
